@@ -24,7 +24,6 @@
 		06F152391E9466DE00381FAB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		06F1523C1E9466DE00381FAB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		06F1523E1E9466DE00381FAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		06F152441E94683200381FAB /* MagickCocoa.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MagickCocoa.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +56,6 @@
 		06F1522F1E9466DD00381FAB /* MagickCocoa */ = {
 			isa = PBXGroup;
 			children = (
-				06F152441E94683200381FAB /* MagickCocoa.entitlements */,
 				06F152301E9466DD00381FAB /* AppDelegate.h */,
 				06F152311E9466DD00381FAB /* AppDelegate.mm */,
 				06F152361E9466DD00381FAB /* ViewController.h */,
@@ -113,7 +111,7 @@
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.Sandbox = {
-								enabled = 1;
+								enabled = 0;
 							};
 						};
 					};
@@ -267,13 +265,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = MagickCocoa/MagickCocoa.entitlements;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = AZLC64ELV9;
-				HEADER_SEARCH_PATHS = "/usr/local/Cellar/imagemagick/7.0.5-4/include/ImageMagick-7";
+				HEADER_SEARCH_PATHS = "/usr/local/Cellar/imagemagick/7.0.5-5/include/ImageMagick-7";
 				INFOPLIST_FILE = MagickCocoa/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				LIBRARY_SEARCH_PATHS = "/usr/local/Cellar/imagemagick/7.0.5-4/lib";
+				LIBRARY_SEARCH_PATHS = "/usr/local/Cellar/imagemagick/7.0.5-5/lib";
 				OTHER_LDFLAGS = (
 					"-DMAGICKCORE_HDRI_ENABLE=1",
 					"-DMAGICKCORE_QUANTUM_DEPTH=16",
@@ -281,16 +278,19 @@
 					"-DMAGICKCORE_QUANTUM_DEPTH=16",
 					"-DMAGICKCORE_HDRI_ENABLE=1",
 					"-DMAGICKCORE_QUANTUM_DEPTH=16",
-					"-I/usr/local/Cellar/imagemagick/7.0.5-4/include/ImageMagick-7\n-DMAGICKCORE_HDRI_ENABLE=1",
-					"-DMAGICKCORE_QUANTUM_DEPTH=16",
+					"-I/usr/local/Cellar/imagemagick/7.0.5-5/include/ImageMagick-7",
 					"-DMAGICKCORE_HDRI_ENABLE=1",
 					"-DMAGICKCORE_QUANTUM_DEPTH=16",
 					"-DMAGICKCORE_HDRI_ENABLE=1",
 					"-DMAGICKCORE_QUANTUM_DEPTH=16",
-					"-I/usr/local/Cellar/imagemagick/7.0.5-4/include/ImageMagick-7\n-L/usr/local/Cellar/imagemagick/7.0.5-4/lib",
+					"-DMAGICKCORE_HDRI_ENABLE=1",
+					"-DMAGICKCORE_QUANTUM_DEPTH=16",
+					"-I/usr/local/Cellar/imagemagick/7.0.5-5/include/ImageMagick-7",
+					"-L/usr/local/Cellar/imagemagick/7.0.5-5/lib",
 					"-lMagick++-7.Q16HDRI",
 					"-lMagickWand-7.Q16HDRI",
-					"-lMagickCore-7.Q16HDRI\n-L/usr/local/Cellar/imagemagick/7.0.5-4/lib",
+					"-lMagickCore-7.Q16HDRI",
+					"-L/usr/local/Cellar/imagemagick/7.0.5-5/lib",
 					"-lMagick++-7.Q16HDRI",
 					"-lMagickWand-7.Q16HDRI",
 					"-lMagickCore-7.Q16HDRI",
@@ -304,13 +304,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = MagickCocoa/MagickCocoa.entitlements;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = AZLC64ELV9;
-				HEADER_SEARCH_PATHS = "/usr/local/Cellar/imagemagick/7.0.5-4/include/ImageMagick-7";
+				HEADER_SEARCH_PATHS = "/usr/local/Cellar/imagemagick/7.0.5-5/include/ImageMagick-7";
 				INFOPLIST_FILE = MagickCocoa/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				LIBRARY_SEARCH_PATHS = "/usr/local/Cellar/imagemagick/7.0.5-4/lib";
+				LIBRARY_SEARCH_PATHS = "/usr/local/Cellar/imagemagick/7.0.5-5/lib";
 				OTHER_LDFLAGS = (
 					"-DMAGICKCORE_HDRI_ENABLE=1",
 					"-DMAGICKCORE_QUANTUM_DEPTH=16",
@@ -318,16 +317,19 @@
 					"-DMAGICKCORE_QUANTUM_DEPTH=16",
 					"-DMAGICKCORE_HDRI_ENABLE=1",
 					"-DMAGICKCORE_QUANTUM_DEPTH=16",
-					"-I/usr/local/Cellar/imagemagick/7.0.5-4/include/ImageMagick-7\n-DMAGICKCORE_HDRI_ENABLE=1",
-					"-DMAGICKCORE_QUANTUM_DEPTH=16",
+					"-I/usr/local/Cellar/imagemagick/7.0.5-5/include/ImageMagick-7",
 					"-DMAGICKCORE_HDRI_ENABLE=1",
 					"-DMAGICKCORE_QUANTUM_DEPTH=16",
 					"-DMAGICKCORE_HDRI_ENABLE=1",
 					"-DMAGICKCORE_QUANTUM_DEPTH=16",
-					"-I/usr/local/Cellar/imagemagick/7.0.5-4/include/ImageMagick-7\n-L/usr/local/Cellar/imagemagick/7.0.5-4/lib",
+					"-DMAGICKCORE_HDRI_ENABLE=1",
+					"-DMAGICKCORE_QUANTUM_DEPTH=16",
+					"-I/usr/local/Cellar/imagemagick/7.0.5-5/include/ImageMagick-7",
+					"-L/usr/local/Cellar/imagemagick/7.0.5-5/lib",
 					"-lMagick++-7.Q16HDRI",
 					"-lMagickWand-7.Q16HDRI",
-					"-lMagickCore-7.Q16HDRI\n-L/usr/local/Cellar/imagemagick/7.0.5-4/lib",
+					"-lMagickCore-7.Q16HDRI",
+					"-L/usr/local/Cellar/imagemagick/7.0.5-5/lib",
 					"-lMagick++-7.Q16HDRI",
 					"-lMagickWand-7.Q16HDRI",
 					"-lMagickCore-7.Q16HDRI",
@@ -356,6 +358,7 @@
 				06F152431E9466DE00381FAB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
